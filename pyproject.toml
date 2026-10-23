@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laboratory-checker-solver"
+version = "1.0.0"
+description = "Autonomous DOM-based test solver with anti-detection pacing for University Laboratory Checker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Artem Kyrychenko", email = "artem@example.com" }
+]
+dependencies = [
+    "httpx>=0.27.0",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+quiz-solver = "checker_solver.cli:main"
+
